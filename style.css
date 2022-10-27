@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    background-color: hsl(216, 12%, 8%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+/* RATING STATE STYLING */
+
+
+main.rating-state {
+    display: block;
+
+    background-color: hsl(213, 19%, 18%);
+    padding: 2rem;
+    max-width: 370px;
+    border-radius: 20px;
+}
+
+
+/* ON JS */
+
+main.rating-state.active {
+    display: none;
+}
+
+
+/**/
+main .star {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(216, 12%, 8%);
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.rating-state h1 {
+    color: hsl(0, 0%, 100%);
+    padding-top: 1.5rem;
+}
+
+.rating-state p {
+    color: hsl(217, 12%, 63%);
+    padding-top: 1rem;
+    line-height: 1.7;
+}
+
+.rating-numbers {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: hsl(216, 12%, 8%);
+    color: hsl(217, 12%, 63%);
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+}
+
+.num:hover  {
+    color: #ffffff !important;
+    background-color: hsl(25, 97%, 53%) !important;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: .6rem 0;
+    cursor: pointer;
+    border-radius: 20px;
+    letter-spacing: .2rem;
+    font-weight: 700;
+}
+
+.btn:hover {
+    color: hsl(25, 97%, 53%);
+    background-color: #ffffff;
+}
+
+/* END OF RATING STATE STYLING */
+
+/* THANK YOU STATE STYLING */
+
+main.thank-you-state {
+    display: none;
+
+    background-color: hsl(213, 19%, 18%);
+    padding: 2rem;
+    max-width: 370px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* ON JS */
+
+main.thank-you-state.active {
+    display: block;
+}
+
+/**/
+.selection-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.7rem 0;
+}
+
+.selection-count > p {
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(216, 12%, 8%);
+    padding: .2rem 1rem;
+    border-radius: 15px;
+}
+
+.ty-title {
+    color: #ffffff;
+    margin-bottom: .5rem;
+}
+
+.ty-message {
+    color: hsl(217, 12%, 63%);
+    line-height: 1.7;
+}
+
+.return {
+    margin-top: 1rem;
+    width: 100%;
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: .6rem 0;
+    cursor: pointer;
+    border-radius: 20px;
+    letter-spacing: .2rem;
+    font-weight: 700;
+}
+
+
+/* END OF THANK YOU STATE STYLING */
